@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt('Enter number a'))
+        let b = parseInt(prompt('Enter number b'))
+
+        let operation =  prompt('Enter a mathematical operation')
+
+        function calculate(a, b, operation) {
+            let res;
+            
+            switch (operation) {
+                case '+':
+                    res = a + b;
+                    break;
+                case '-':
+                    res = a - b;
+                    break;
+                case '*':
+                    res = a * b;
+                    break;
+                case '/':
+                    res = a / b;
+                    break;
+                default:
+                    console.log('This operation is not provided in the calculator.');
+                    return;
+                }
+            console.log("Result:", res);
+        }
+        calculate(a, b, operation);
+    </script>
+    
+</body>
+</html>

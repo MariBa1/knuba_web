@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+}
+
+body {
+  background-color: #3a4965;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.pricing_plan_heading h4 {
+    font-size: 18px;
+}
+  
+.pricing_plan_heading h3 {
+    font-size: 30px;
+}
+
+i {
+  color: #848484;
+  font-size: 20px;
+}
+
+td, th {
+  height: 60px;
+  width: 350px;
+  text-align: center;
+}
+
+table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+table thead {
+  color: #484848;
+}
+
+table tbody {
+  color: #484848;
+}
+
+.text-container {
+  text-align: left;
+  display: inline-block;
+}
+
+.prices-td {
+  height: 87px;
+}
+
+  /* ТІНІ*/
+
+.left_contour {
+  box-shadow: -3px 0 8px -4px rgba(182, 182, 182, 0.8)
+}
+
+.right_contour {
+  box-shadow: 3px 0 8px -4px rgba(182, 182, 182, 0.8);
+}
+
+.sides_contour {
+  box-shadow: -1px 0 8px -4px rgba(149, 149, 149, 0.8), 3px 0 8px -4px rgba(182, 182, 182, 0.8);
+}
+
+.bold-text {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cents {
+  font-size: 24px;
+}
+
+.standard-price-cell {
+  color: #fff;
+  background-color: #89c331;
+  font-size: 24px;
+}
+
+.ultimate-price-cell {
+  color: #fff;
+  background-color: #f04a56;
+  font-size: 30px;
+}
+
+.premium-price-cell {
+  color: #fff;
+  background-color: #20807c;
+  font-size: 24px;
+}
+
+/* Розиіщення туксту по центру */
+
+.pricing-plan-cells {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Розташування іконок */
+
+.pricing-plan-cells i {
+  margin-right: 15px;
+}
+
+/* Розділ рядків таблиці за кольорами */
+
+table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
+/* Футер, кнопки */
+
+tfoot td {
+  height: 110px;
+}
+
+#contact_us_all{
+    background-color: #dddddd;
+  }
+  
+.button {
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    height: 50px;
+    width: 190px;
+    border-radius: 5px;
+    transition: 0.1s;
+    border: none;
+    cursor: pointer;
+}
+
+#contact_us {
+    background-color: #484848;
+    border-bottom: 5px solid #404040;
+
+}
+
+#contact_us:hover {
+    transform: scale(1.1);
+}
+
+#standart-buy {
+    background-color: #89c331;
+    border-bottom: 5px solid #79b027;
+}
+
+#standart-buy:hover {
+    transform: scale(1.1);
+}
+
+#ultimate-buy {
+    background-color: #f04a56;
+    border-bottom: 5px solid #df3a46;
+}
+
+#ultimate-buy:hover {
+    transform: scale(1.1);
+}
+
+#premium-buy {
+    background-color: #20807c;
+    border-bottom: 5px solid #16736f;
+}
+
+#premium-buy:hover {
+    transform: scale(1.1);
+}

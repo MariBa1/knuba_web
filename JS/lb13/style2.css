@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo", sans-serif;
+  }
+  
+  body {
+    background-color: #e9b4e482;
+  }
+  
+  #themeToggle {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 15px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+  
+  .pricing_plan_heading h4 {
+      font-size: 18px;
+  }
+    
+  .pricing_plan_heading h3 {
+      font-size: 30px;
+  }
+  
+  i {
+    color: #848484;
+    font-size: 20px;
+  }
+  
+  td, th {
+    height: 60px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+  }
+  
+  table thead {
+    color: #484848;
+  }
+  
+  table tbody {
+    color: #484848;
+  }
+  
+  .text-container {
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .prices-td {
+    height: 87px;
+  }
+  
+    /* ТІНІ*/
+  
+  .left_contour {
+    box-shadow: -3px 0 8px -4px rgba(135, 135, 135, 0.8)
+  }
+  
+  .right_contour {
+    box-shadow: 3px 0 8px -4px rgba(135, 135, 135, 0.8);
+  }
+  
+  .sides_contour {
+    box-shadow: -1px 0 8px -4px rgba(135, 135, 135, 0.8), 3px 0 8px -4px rgba(135, 135, 135, 0.8);
+  }
+  
+  .bold-text {
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .cents {
+    font-size: 24px;
+  }
+  
+  .standard-price-cell {
+    color: #fff;
+    background-color: #4f498d7e;
+    font-size: 24px;
+  }
+  
+  .ultimate-price-cell {
+    color: #fff;
+    background-color: #c6323c8d;
+    font-size: 30px;
+  }
+  
+  .premium-price-cell {
+    color: #fff;
+    background-color: #c6b83d;
+    font-size: 24px;
+  }
+  
+  /* Розиіщення туксту по центру */
+  
+  .pricing-plan-cells {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Розташування іконок */
+  
+  .pricing-plan-cells i {
+    margin-right: 15px;
+  }
+  
+  /* Розділ рядків таблиці за кольорами */
+  
+  table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #e3e3e3;
+  }
+  
+  /* Футер, кнопки */
+  
+  tfoot td {
+    height: 110px;
+  }
+  
+  #contact_us_all{
+      background-color: #dddddd;
+    }
+    
+  .button {
+      padding-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      height: 50px;
+      width: 190px;
+      border-radius: 5px;
+      transition: 0.1s;
+      border: none;
+      cursor: pointer;
+  }
+  
+  #contact_us {
+      background-color: #6c4141;
+      border-bottom: 5px solid #452626;
+  
+  }
+  
+  #contact_us:hover {
+      transform: scale(1.1);
+  }
+  
+  #standart-buy {
+      background-color: #4f498d7e;
+      border-bottom: 5px solid #4f498d3e;
+  }
+  
+  #standart-buy:hover {
+      transform: scale(1.1);
+  }
+  
+  #ultimate-buy {
+      background-color: #c6323c8d;
+      border-bottom: 5px solid #df3a453b;
+  }
+  
+  #ultimate-buy:hover {
+      transform: scale(1.1);
+  }
+  
+  #premium-buy {
+      background-color: #c6b83d;
+      border-bottom: 5px solid #c6b83d33;
+  }
+  
+  #premium-buy:hover {
+      transform: scale(1.1);
+  }

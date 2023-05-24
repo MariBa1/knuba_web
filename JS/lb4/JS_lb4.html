@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET LOGIN</title>
+</head>
+<body>
+    <script>
+    
+    function createNewUser() {
+        let newUser = {};
+        newUser.firstName = prompt("Enter your name:");
+        newUser.lastName = prompt("Enter your lastname:");
+        newUser.getLogin = function() {
+            return newUser.firstName.charAt(0).toLowerCase() + newUser.lastName.toLowerCase();
+        };
+        return newUser;
+    }
+
+    let user = createNewUser();
+    let login = user.getLogin();
+    console.log(login);
+    console.log("Welcome!")
+
+    </script>
+    
+</body>
+</html>

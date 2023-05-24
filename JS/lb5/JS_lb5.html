@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET LOGIN</title>
+</head>
+<body>
+    <script>
+    
+    function createNewUser() {
+        let newUser = {};
+        newUser.firstName = prompt("Enter your name:");
+        newUser.lastName = prompt("Enter your lastname:");
+        newUser.birthday = prompt("Enter your birthday(dd.mm.yyyy):")
+        //let birthday_parts = new Date(+birthday.split('.')[2], birthday.split('.')[1] - 1, +birthday.split('.')[0])
+        newUser.getLogin = function() {
+            return newUser.firstName.charAt(0).toLowerCase() + newUser.lastName.toLowerCase();
+        },
+
+
+
+
+
+        newUser.getAge = function(){
+            let today = new Date();
+            let birthDate = new Date(newUser.birthday);
+            let age = today.getFullYear() - birthDate.getFullYear();
+            let monthDiff = (today.getMonth()) - (birthDate.getMonth());
+            let dayDiff = today.getDate() - birthDate.getDate();
+            if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+                age--;
+            }
+            return age;
+        },
+         newUser.getPassword = function(){
+            return newUser.firstName.charAt(0).toUpperCase() + newUser.lastName.toLowerCase() + newUser.birthday.split('.')[2];
+        };
+        return newUser
+    }
+
+    let userinfo = createNewUser()
+    console.log('Login: ', userinfo.getLogin())
+    console.log('Age: ', userinfo.getAge())
+    console.log('Password', userinfo.getPassword())
+
+    </script>
+    
+</body>
+</html>
